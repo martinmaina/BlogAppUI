@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="addsection">
+	{% for boo in bible %}
+<form action="/editverse" method="POST">
+
+		<label for="book" >Book</label>
+		<input type="text" name="book" id="book" placeholder="Book"  value="{{ boo[0] }}"><br>
+		<label for="chapter">Chapter</label>
+		<input type="integer" id="chapter" name="chapter" placeholder="chapter" required value="{{ boo.chapter }}"><br>
+		<label for="verse_no">Verse</label>
+		<input type="integer" name="verse_no" placeholder="verse_no" id="verse_no"required value=" {{ boo.verse_no }}"><br>
+		<label for="verse">Verse</label>
+		<textarea name="verse" id="verse" placeholder="verse goes here"  ></textarea><br>
+		<label class="dontdis"type="integer" name="id" value="{{ boo.id }}"></label>
+		<button class="edit-btn" type="Submit" >Edit</button>
+
+	</form>
+    </div>
+{% endfor %}
+{% endblock %}

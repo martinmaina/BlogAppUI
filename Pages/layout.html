@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% if title %}
+		<title>{{ title }}</title>
+	{% endif %}
+	
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/static/fonts/all.css">
+	
+</head>
+<body>
+<header>
+<div id="welc">
+	<h1>Welcome to Your Bible Verses Blog</h1>
+
+	<div class="nav">
+		<ul>
+				<LI><a href="/">Home</a></LI>
+				<li><a href="/addverse">Add</a></li>
+				{% if session.logged_in %}
+				<li><a href="/logout">Logout</a></li>
+				
+				{% else %}
+				<li><a href="/login">Login</a></li>
+				{% endif %}
+			</ul>
+			<div class="clr"></div>
+	</div>
+</div>
+</header>
+{% block body %}
+
+
+{% endblock %}
+
+{% for message in get_flashed_messages() %}
+<div id="flashed">
+	<p>{{ message }}</p>
+</div>
+{% endfor %}
+
+
+<script type="text/javascript" src="/static/js/script.js"></script>
+
+<footer class="main-footer">
+	<p> Bible Your Verses &copy; 2019 </p>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+
+{% extends 'layout.html' %}
+
+
+
+{% block body %}
+<div >
+	<form id="login-box" action="{{ url_for('login') }}" method=post>
+	<h1>Login</h1>
+		<div class="text-box">
+			<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+			<input type="text" name="username" >
+		</div>
+	<div class="text-box">
+		<i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+		<input type="password" name="password">
+	</div>
+	<input class="btn" onclick="hideflash()" type="submit" value="Login"></input>
+	</form>
+{% if error %}<p><b>Error:</b> {{ error }} {% endif %}</p>
+</div>
+{% endblock %}
+

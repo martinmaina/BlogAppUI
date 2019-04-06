@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div id="main">
+
+{% for boo in bible %}
+<ul class="verses">
+	<li> <span class="book">{{ boo.book }} {{ boo.chapter }}:{{ boo.verse_no }} </span> <br>{{ boo.verse }}</li>
+</ul>
+	
+	<div id="form1">
+	<form action="/editverse" method="POST">
+		<div class="">
+		<label for="id" >Id </label>
+		<input name="id" id="id" type="integer" required value="{{ boo.id }}"></input>
+		<label for="verse">Verse</label>
+		<textarea name="verse" id="verse" placeholder="verse goes here" rows=10, cols=40 required></textarea><br>
+		</div>
+		<input type=submit name=Submit>
+	</form>
+	</div>
+	<i class="fas fa-trash-alt"></i>
+		<button class="delete-btn" href="/delete">Delete</button>
+	
+	<i class="fas fa-edit"></i>
+	<button onclick="hideshow()">Edit</button>
+<!--	<div id="formdelete">
+		<form action="/deleteVerse" method="POST">
+		<div class="dontdis">
+			<label for="id" >Id </label>
+			<input name="id" id="id" type="integer" required value="{{ boo.id }}"></input>
+		</div>
+		</form>
+	</div>
+	<button class="delete-btn" onclick="delee()" href="/delete">Delete</button>-->
+
+	<div class="clr"></div>
+
+{% else %}
+<p>Nothing here so far</p>
+{% endfor %}
+
+</div>
+
+{% endblock %}

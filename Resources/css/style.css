@@ -1,0 +1,275 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+body{
+	font-family: sans-serif, cursive;
+	background: url('../img/bc4.jpg') no-repeat center center/cover ;
+	background-attachment: fixed;
+
+
+}
+
+
+
+#main{
+	width: 70%;
+	margin: auto;
+}
+
+#main .verses {
+	margin-top: 10px;
+}
+#main ul li{
+padding-left: 10px;
+}
+
+#main .verses .book{
+	margin: auto;	
+	
+	font-weight: bolder;
+	
+}
+
+#main ul{
+	list-style: none;
+
+}
+
+
+#main .verses li {
+	margin: 2px 10px;
+/*	float: left;*/
+}
+#main .verses li {
+	background-color: lightgray;
+	display: block;
+	padding-left:  10px;
+	border-radius: 10px;
+	
+}
+.clr{
+	clear: both;
+}
+
+#welc{
+	margin: 20px 0;
+	text-align: center;
+	width: auto;
+	color: orange;
+
+}
+#welc .nav{
+	background: rgba(111, 111,111, 0.6);
+	width: 80%;
+	display: block;
+	margin:auto;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	height: 50px;
+}
+
+.nav ul{
+	list-style: none;
+}
+
+.nav a{
+	text-decoration: none;
+	color: orange;
+	float: left;
+	/*padding-left: 20px;*/
+	padding:20px;
+}
+
+#main .verses .edit-btn,
+#main .verses .delete-btn{
+	display: inline-block;
+	font-size: 14px;
+	padding: 5px 10px;
+	border:none;
+	text-decoration: none;
+	float: left;
+	margin-left: 20px;
+	cursor: pointer;
+	background: #333;
+	color: #fff;
+	border-radius: 10px;
+}
+#main .verses .delete-btn{
+	margin-left: 10px;
+}
+
+#main .verses .edit-btn:hover,
+#main .verses .delete-btn:hover{
+	color: #333;
+	text-decoration: none;
+	background: #f7c08a
+}
+
+#main .verses  .dontdis{
+	display: none;
+}
+
+.addsection{
+	text-align: left;
+	margin-left: 20%;
+}
+
+.addsection form input{
+	margin-bottom: 20px;
+	width: 200px;
+}
+
+.addsection label{
+	font-family: 'Comic Sans MS';
+	font-weight: bolder;
+	color: blue;
+
+}
+
+.addsection form input:last-of-type{
+	color: red;
+	width: 100px;
+	background-color: yellow;
+	padding: 3px;
+	border-radius: 10px;
+	align-content: center;
+}
+
+#formButton{
+	border-radius: 28px;
+	font-family: Arial;
+	color: #fff;
+	font-size: 20px;
+	background:#3498db;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	margin: 20px;
+}
+
+#formButton:hover{
+	background: #3cb0fd;
+	text-decoration:none;
+}
+
+#form1{
+	display:none;
+
+}
+#flashed{
+	font-family: 'Comic Sans MS';
+	display: block;
+	width: 350px;
+	margin: auto;
+	
+}
+
+#flashed p{
+	padding: 3px 10px;
+	border-radius: 10px;
+	color: #742b19;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	background: rgb(133, 119, 119);
+}
+/* FOOTER */
+
+.main-footer{
+	text-align: center;
+	background: #444;
+	color: #fff;
+	left: 0;
+	bottom: 0;
+	padding: 20px;
+	position: fixed;
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+/* LOGIN PAGE */
+#login-box{
+	position:absolute;
+	top: auto;
+	left:34.5%;
+	margin: auto;
+	color: white;
+}
+
+#login-box h1 {
+    float: left;
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 6px soid #4caf50;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 13px 0;
+}
+
+
+#login-box .text-box {
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    margin: auto;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #4caf50;
+}
+
+#login-box .text-box i {
+    width: 20px;
+    color: rgb(202, 231, 199);
+    float: left;
+    text-align: center;
+}
+
+
+#login-box .text-box input {
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 28px;
+    width: 65.5%;
+    float: left;
+    margin: 0 30px;
+}
+
+#login-box .btn {
+    width: 100%;
+    background: none;
+    border: 2px solid #4caf50;
+    color: white;
+    
+    padding: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 12px 0;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+#login-box .nbt {
+    width: 85%;
+    background: none;
+    border: 2px solid #4caf50;
+    color: white;
+    
+    padding: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 12px 0;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+#login-box i{
+	float: left;
+	margin-top: 18px;
+	margin-right: 3px;
+	font-size: 2.5em;
+	color: rgb(205, 218, 93);
+
+}

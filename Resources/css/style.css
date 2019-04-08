@@ -28,6 +28,10 @@ body{
 padding-left: 10px;
 }
 
+#main ul:last-of-type{
+	margin-bottom: 150px;
+}
+
 #main .verses .book{
 	margin: auto;	
 	
@@ -77,6 +81,12 @@ padding-left: 10px;
 	list-style: none;
 }
 
+.nav ul li:nth-of-type(4){
+	padding: 20px;
+	float:right;
+	margin-right: 30px; 
+}
+
 .nav a{
 	text-decoration: none;
 	color: orange;
@@ -114,31 +124,8 @@ padding-left: 10px;
 	display: none;
 }
 
-.addsection{
-	text-align: left;
-	margin-left: 20%;
-}
 
-.addsection form input{
-	margin-bottom: 20px;
-	width: 200px;
-}
 
-.addsection label{
-	font-family: 'Comic Sans MS';
-	font-weight: bolder;
-	color: blue;
-
-}
-
-.addsection form input:last-of-type{
-	color: red;
-	width: 100px;
-	background-color: yellow;
-	padding: 3px;
-	border-radius: 10px;
-	align-content: center;
-}
 
 #formButton{
 	border-radius: 28px;
@@ -164,7 +151,9 @@ padding-left: 10px;
 	font-family: 'Comic Sans MS';
 	display: block;
 	width: 350px;
-	margin: auto;
+	position: fixed;
+	left: 36%;
+	bottom: 10%;
 	
 }
 
@@ -272,4 +261,112 @@ padding-left: 10px;
 	font-size: 2.5em;
 	color: rgb(205, 218, 93);
 
+}
+
+#login_box .addsection{
+	margin-left: 0;
+}#login_box{
+	position:absolute;
+	top: auto;
+	left:34.5%;
+	margin: auto;
+	color: white;
+}
+
+#login_box .nbt {
+    width: 85%;
+    background: none;
+    border: 2px solid #4caf50;
+    color: white;
+    
+    padding: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 12px 0;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+/*
+ .addsection label{
+	color: #742b19;
+	font-size: 1.3em;
+	font-family: 'Comic Sans MS';
+	font-weight: bolder
+}*/
+.addsection label {
+	color: rgb(53, 68, 4);
+	font-size: 1.3em;
+	font-family: 'Comic Sans MS';
+	font-weight: bolder;
+	background: rgba(188, 143, 143, 0.5);
+	border-radius: 7px;
+	width: 100%;
+	padding: 5px;
+}
+
+.addsection{
+	text-align: left;
+	margin-left: 20%;
+}
+.addsection form textarea{
+	background: none;
+	border-bottom-color: #4caf50;
+	border-left-color: #0a5a0d;
+	border-right-color: #153e8a;
+	border-top-color: rgb(3, 47, 58);
+	float: left;
+	margin-top: 10px;
+	margin-left: 80px;
+	color: #fff;
+	font-family: 'Comic Sans MS';
+	font-size: 1.3em;
+}
+.addsection form input{
+	margin-bottom: 20px;
+	margin-left: 33px;
+	width: 200px;
+	height: 20px;
+	padding: 5px;
+	border-top:0px;
+	color: #fff;
+	font-size: 1.3em;
+	border-right:0px;
+	border-bottom-left-radius: 15px;
+	border-bottom-color: #4caf50;
+	border-left-color: #0a5a0d;
+	background: none;
+}
+
+.addsection form input:nth-of-type(2){
+	margin-left: 1px;;
+}
+.addsection form input:nth-of-type(3){
+	margin-left: 1px;;
+}
+.addsection form input::placeholder,
+.addsection form textarea::placeholder{
+	color: antiquewhite;
+	font-size: 19px;;
+
+}
+
+.addsection form input:last-of-type{
+	height: 100%;
+	width: 200px;
+}
+/* 
+.addsection label{
+	font-family: 'Comic Sans MS';
+	font-weight: bolder;
+	color: blue;
+
+} */
+
+.addsection form input:last-of-type{
+	color: red;
+	width: 100px;
+	background-color: yellow;
+	padding: 3px;
+	border-radius: 10px;
+	align-content: center;
 }

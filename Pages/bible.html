@@ -7,7 +7,9 @@
 {% for boo in bible %}
 <ul class="verses">
 	<li> <span class="book">{{ boo.book }} {{ boo.chapter }}:{{ boo.verse_no }} </span> <br>{{ boo.verse }}</li>
-</ul>
+	<i class="fas fa-trash-alt"></i>
+		<a href="/deleteVerse/{{ boo.id }} "><button class="delete-btn" >Delete</button></a>
+</ul> 
 	
 	<div id="form1">
 	<form action="/editverse" method="POST">
@@ -20,11 +22,10 @@
 		<input type=submit name=Submit>
 	</form>
 	</div>
-	<i class="fas fa-trash-alt"></i>
-		<button class="delete-btn" href="/delete">Delete</button>
 	
-	<i class="fas fa-edit"></i>
-	<button onclick="hideshow()">Edit</button>
+	
+	<!-- <i class="fas fa-edit"></i>
+	<button onclick="hideshow()">Edit</button> -->
 <!--	<div id="formdelete">
 		<form action="/deleteVerse" method="POST">
 		<div class="dontdis">

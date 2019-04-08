@@ -5,8 +5,8 @@
 		<title>{{ title }}</title>
 	{% endif %}
 	
-	<link rel="stylesheet" type="text/css" href="/Resources/css/style.css">
-	<link rel="stylesheet" type="text/css" href="/Resources/fonts/all.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/static/fonts/all.css">
 	
 </head>
 <body>
@@ -24,6 +24,13 @@
 				{% else %}
 				<li><a href="/login">Login</a></li>
 				{% endif %}
+				<li><form action="/searchWord" method="post">
+						<i style="margin-top:5px;" class="fas fa-search fa-1x"></i>
+						<input type="text" name="word" placeholder="Search here " >
+						
+						<!-- <input type="submit" name="Search"value="Search"> -->
+					</form>
+				</li>
 			</ul>
 			<div class="clr"></div>
 	</div>
@@ -41,7 +48,7 @@
 {% endfor %}
 
 
-<script type="text/javascript" src="/Resources/js/script.js"></script>
+<script type="text/javascript" src="/static/js/script.js"></script>
 
 <footer class="main-footer">
 	<p> Bible Your Verses &copy; 2019 </p>
